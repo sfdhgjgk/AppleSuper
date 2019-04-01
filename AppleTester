@@ -1,0 +1,21 @@
+public class AppleTester {
+    public static void main(String[]Args)
+    {
+         IPad ipad = new IPad(17000, "iPad", false, 14, 1024);
+         Airpods airpods = new Airpods(199, "Airpods", false, 2);
+
+         System.out.println(ipad.getPrice());
+         ipad.newCase();
+         System.out.println(ipad.getPrice());
+
+         System.out.println(airpods.getPrice());
+         airpods.newCase();
+         System.out.println(airpods.getPrice());
+
+         airpods.losePod();
+        System.out.println("This is how many pods are left of 2 after losing 1: " + airpods.getPodsStillLeft());
+
+        ipad.upgrade(1435687);
+        System.out.println("iPad cost after upgrade: " + ipad.getPrice());
+    }
+}
