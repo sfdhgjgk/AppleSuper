@@ -1,0 +1,36 @@
+public abstract class AppleProducts
+{
+    private int price;
+    private String name;
+    private boolean caser;
+
+    public AppleProducts(int p, String n, boolean r)
+    {
+        price = p;
+
+        name = n;
+
+        caser = r;
+    }
+    public AppleProducts()
+    {
+        price = 5000;
+        name = "Geoffrey the average apple product";
+        caser = false;
+    }
+
+    public abstract void newCase();
+
+    public void upgrade(int n)
+    {
+        price += n;
+    }
+
+    public void setPrice(int p){this.price = p;}
+    public int getPrice(){return this.price;}
+    public void setName(String s){this.name = s;}
+    public String getName(){return this.name;}
+    public void setCaser(boolean b){this.caser = b;}
+    public boolean getCaser(){return this.caser;}
+}
+
