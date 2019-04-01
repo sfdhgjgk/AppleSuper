@@ -1,0 +1,16 @@
+public class IPad extends AppleProducts
+{
+    private int screenSize;
+    private int memory;
+    public IPad(int p, String n, boolean r, int s, int m){
+        super(p, n, r);
+        screenSize = s; memory = m;
+    }
+
+    public void newCase()
+    {
+        this.setPrice(getPrice() + 80);
+        this.setCaser(true);
+    }
+
+}
