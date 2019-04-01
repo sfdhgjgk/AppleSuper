@@ -1,0 +1,20 @@
+public class Airpods extends AppleProducts
+{
+
+    private int podsStillLeft;
+    public Airpods(int p, String n, boolean r, int t) {
+        super(p, n, r);
+        podsStillLeft = t;
+    }
+    public void setPodsStillLeft(int p){this.podsStillLeft = p;}
+    public int getPodsStillLeft(){return this.podsStillLeft;}
+    public void newCase()
+    {
+        this.setPrice(getPrice() + 9);
+        this.setCaser(true);
+    }
+    public void losePod()
+    {
+        this.setPodsStillLeft(this.getPodsStillLeft() - 1);
+    }
+}
